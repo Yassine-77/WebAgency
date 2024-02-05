@@ -118,6 +118,13 @@ section h1 {
 }
 .global-service{
     display: flex;
+    WIDTH: 100%;
+}
+.servicelogo{
+    width: 400px;
+}
+.servicebox p {
+    width: 300px;
 }
 .logo {
     display: -webkit-inline-box;
@@ -154,6 +161,15 @@ section h1 {
     transform-origin: center;
     transform: rotate(0deg);
 }
+@-webkit-keyframes spin-right {
+    100% {
+      -webkit-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
 
 #Portfolio{
 background: #e4e4e4;;
@@ -236,17 +252,25 @@ figure:hover figcaption {
     flex-direction: column;
     position: absolute;
     right: 20px;
-    top: 30px;
+    top: 0px;
     background-color:rgba(255, 255, 255, 0.5);
+    height: 100%;
 }
 input{
     margin-bottom: 10px;
+}
+#message{
+    display: flex;
+    justify-content: center;
 }
 footer {
     background-color:white; padding: 20px;color: #ffffff;} /* MARGE INTERIEUR : padding, Margin : marge exterieur*/
     .social {display: flex;list-style-type: none; justify-content: center; gap: 20px;padding: 0px;}
 .social li a {color: #1db1bf; font-size: 30px;}
-.copyright {text-align: center;/*centrer un paragraphe dans une boite*/margin-top: 10px;}
+.social ,a{
+    display: flex;justify-content: center;color: #1db1bf;text-decoration: none;
+}
+.copyright {text-align: center;/*centrer un paragraphe dans une boite*/margin-top: 10px;COLOR: #1DB1BF;}
 
 @media screen and (max-width: 768px) {
     header nav {
