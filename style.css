@@ -24,17 +24,28 @@ header nav {
     justify-content: center;
 }
 .slide{
-    width: 900px;
+    width: 100%;
     position: relative;
     border: 1px solid red;
     display: flex;
     margin: 0;
     padding: 0;
     position: relative;
-    animation: 20s animationslider infinite;
+    overflow: hidden;
+    height: 300px;
+    
+    }
+    .slideimage {
+        display: flex;
+        animation: 20s animationslider infinite;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
     }
 .slide img {
-    width: 900px;
+    width: 100%;
+    
 }
 
 .slidebox{
@@ -42,21 +53,29 @@ header nav {
 }
 .slide p {
     color: white;
+    margin-left: 6%;
+    margin-top: -3%;
 
 }
 .slide h1 {
 
     color: white;
     padding: 20px;
+    margin-left: 0%;
+    margin-top: 7%;
 }
 
 
 .slide h1 strong{
-    color: blue;
+    color: #1DB1BF;
+
+}
+.slide button {
+    background-color: #1DB1BF;
+    margin-left: 29%;
 }
 .slide a{
-    background: blue ;
-    color: white;
+color: white;
 }
 
 @keyframes animationslider {
@@ -68,19 +87,20 @@ header nav {
 }
 .btngauche, .btndroite {
     position: absolute;
-top: 155px;
+top: 280px;
 color: white;
 background-color: black;
 height: 30px;
 width: 20px;
 }
 .btngauche {
-    left: 0px;
-    border-radius: 0 50% 50% 0;
+    left: 10px;
+    border-radius:50% 0% 0% 50%;
+    
 }
 .btndroite {
-    right: 0px;
-    border-radius: 50% 0% 0% 50%;
+    right: 10px;
+    border-radius: 0% 50% 50% 0%;
 }
 
 section h1 {
@@ -105,7 +125,7 @@ section h1 {
     width:20px ;
     height: 20px; ;
     position:absolute ;
-    background:blue ;
+    background:#1db1bf;
     border-radius: 50%;
     left: 50%;
     transform: translateX(-50%);
@@ -114,7 +134,7 @@ section h1 {
 }
 
 #service p {
-    text-align: center;
+    text-align: left;
 }
 .global-service{
     display: flex;
@@ -140,9 +160,9 @@ section h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
- 
-  .cercle .icon-container .point {
+}
+
+.cercle .icon-container .point {
     position: absolute;
     top: -10px;
     height: 20px;
@@ -150,26 +170,26 @@ section h1 {
     border-radius: 100%;
     background-color:aqua;
     border: 3px solid white;
-  }
-  .cercle .icon-container{
+}
+.cercle .icon-container{
     width: 65px; ;
     height: 65px; ;
     position:absolute ;
     animation: spin-right 10s linear infinite;
-  }
+}
 .cercle i {font-size: 26px;
     transform-origin: center;
     transform: rotate(0deg);
 }
 @-webkit-keyframes spin-right {
     100% {
-      -webkit-transform: rotate(360deg);
-      -moz-transform: rotate(360deg);
-      -ms-transform: rotate(360deg);
-      -o-transform: rotate(360deg);
-      transform: rotate(360deg);
+-webkit-transform: rotate(360deg);
+-moz-transform: rotate(360deg);
+-ms-transform: rotate(360deg);
+-o-transform: rotate(360deg);
+transform: rotate(360deg);
     }
-  }
+}
 
 #Portfolio{
 background: #e4e4e4;;
@@ -202,6 +222,9 @@ background: #e4e4e4;;
     padding: 14px 16px;
     text-decoration: none;
 }
+.hover-white:hover {
+    color: white;
+}
 
 figcaption {
     position: absolute;
@@ -218,7 +241,16 @@ figcaption {
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
     transition: opacity 0.3s ease;
-   
+
+}
+figcaption p {
+    margin-left: -37%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-start;
+    margin-left: -23%;
+    FONT-SIZE: 86%
 }
 figure {
     position: relative;
@@ -277,13 +309,16 @@ footer {
     flex-wrap: wrap;
     }
     .slide {
-       WIDTH: 100%;
+WIDTH: 100%;
 }
 .slide img {
     width: 100%;
     height: 300px;
     object-fit: cover;
     object-position: right;
+}
+.navbutton{
+    display: flex;
 }
 .global-service {
 flex-wrap: wrap;

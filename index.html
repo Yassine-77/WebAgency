@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,37 +9,36 @@
     <link rel="stylesheet" href="style.css">
     <title>Webagency</title>
 </head>
-
 <body>
     <header>
         <nav>
             <img src="img/logo.png" alt="logo">
             <ul class="navbar">
                 <li><a class="link" href="#acceuil">Acceuil</a></li>
-                <li><a class="link" href="#service">service</a></li>
+                <li><a class="link" href="#service">Service</a></li>
                 <li><a class="link" href="#Portfolio">Portfolio</a></li>
                 <li><a class="link" href="#Contact">Contact</a></li>
             </ul>
         </nav>
     </header>
+
     <section id="acceuil">
         <div class="slide">
-            <img src="./img/bg1.jpg" alt="">
-            <img src="./img/bg2.jpg" alt="">
+            <div class="slideimage">
+                <img src="./img/bg1.jpg" alt="photo1">
+                <img src="./img/bg2.jpg" alt="photo2">
+            </div>
             <div class="slidebox">
                 <h1><strong>WEBAGENCY:</strong> L'AGENCE DE TOUS VOS PROJETS!</h1>
                 <p>Vous avez un projet web? La Webagency vous aide à la réaliser.</p>
-                <a href="#bottom">Plus d'infos</a>
+                <button><a href="#bottom">Plus d'infos</a></button>
             </div>
         </div>
-            
         <div class="btngauche"><i class="fas fa-angle-left"></i></div>
         <div class="btndroite"><i class="fas fa-angle-right"></i></div>
-        <div class="textslider">
-        
-        </div>
-
+        <div class="textslider"></div>
     </section>
+
     <section id="service">
         <h3>SERVICE</h3>
         <div class="deco"></div>
@@ -56,9 +54,9 @@
                         </div>
                         <i class="fas fa-chart-line"></i>
                     </div>
-                    <div>
-                        <h3 class="servicebox">UX design</h3>
-                        <p>une équipe passionné qui plasse l'utillisateur final au centre de sa demarche pour une
+                    <div class="servicebox">
+                        <h3>UX design</h3>
+                        <p>Une équipe passionnée qui place l'utilisateur final au centre de sa démarche pour une
                             technologie plus humaine</p>
                     </div>
                 </div>
@@ -69,10 +67,10 @@
                         </div>
                         <i class="fas fa-cubes"></i>
                     </div>
-                    <div>
-                        <h3 class="servicebox">UI design</h3>
-                        <p>une interface optimiser qui permet à votre site web de reter à la page au gré des évolutions
-                            techniques et des nouveau usages </p>
+                    <div class="servicebox">
+                        <h3>UI design</h3>
+                        <p>Une interface optimisée qui permet à votre site web de rester à la page au gré des évolutions
+                            techniques et des nouveaux usages</p>
                     </div>
                 </div>
                 <div class="logo">
@@ -84,36 +82,37 @@
                     </div>
                     <div class="servicebox">
                         <h3>SEO</h3>
-                        <p>Nos expert en réferencement vous permettent d'améliorer le positionement de votre site afin
+                        <p>Nos experts en référencement vous permettent d'améliorer le positionnement de votre site afin
                             d'augmenter votre conversion</p>
                     </div>
                 </div>
-    </section>
-    <section id="Portfolio">
-        <h2>Nos projet</h2>
-        <div class="deco"></div>
-        <p>Beaucoup d'entreprises et particuliers nous ont fait confiance pour leurs projets! Découvrez une sélection de
-            nos réalisations tendances,modernes et innovantes</p>
-        <nav class="navbutton">
-        
-                <a href="#">Tous</a>
-                <a href="#">Créations</a>
-                <a href="#">Corporate</a>
-                <a href="#">Portofolio</a>
-            
-        </nav>
-
-        <div class="imgporfolio">
-            <figure><img src="img/01.jpg" alt="photo"><figcaption><h4>OPTIC DESIGN</h4> <p> optique selon design</p></figcaption></figure>
-            <figure><img src="img/02.jpg" alt="photo"><figcaption>Let's go Party party for you child</figcaption></figure>
-            <figure><img src="img/03.jpg" alt="photo"><figcaption>Pompadour Original la pompe d'adour</figcaption></figure>
-            <figure><img src="img/04.jpg" alt="photo"><figcaption>One event a day site d'evenmentiel</figcaption></figure>
-            <figure><img src="img/05.jpg" alt="photo"><figcaption>OPTIC DESIGN optique selon design</figcaption></figure>
-            <figure><img src="img/06.jpg" alt="photo"><figcaption>OPTIC DESIGN optique selon design</figcaption></figure>
-            <figure><img src="img/07.jpg" alt="photo"><figcaption>OPTIC DESIGN optique selon design</figcaption></figure>
-            <figure><img src="img/08.jpg" alt="photo"><figcaption>OPTIC DESIGN optique selon design</figcaption></figure>
+            </div>
         </div>
     </section>
+
+    <section id="Portfolio">
+        <h2>Nos projets</h2>
+        <div class="deco"></div>
+        <p>Beaucoup d'entreprises et particuliers nous ont fait confiance pour leurs projets! Découvrez une sélection de
+            nos réalisations tendances, modernes et innovantes</p>
+        <nav class="navbutton">
+            <a href="#" class="hover-white">Tous</a>
+            <a href="#" class="hover-white">Créations</a>
+            <a href="#" class="hover-white">Corporate</a>
+            <a href="#" class="hover-white">Portfolio</a>
+        </nav>
+        <div class="imgporfolio">
+            <figure><img src="img/01.jpg" alt="photo"><figcaption><p><b>OPTIC DESIGN</b> optique selon design</p></figcaption></figure>
+            <figure><img src="img/02.jpg" alt="photo"><figcaption><p><b>Let's go Party</b> party for you child</p></figcaption></figure>
+            <figure><img src="img/03.jpg" alt="photo"><figcaption><p><b>Pompadour Original</b> la pompe d'adour</p></figcaption></figure>
+            <figure><img src="img/04.jpg" alt="photo"><figcaption><p><b>One event a day</b> site d'évènementiel</p></figcaption></figure>
+            <figure><img src="img/05.jpg" alt="photo"><figcaption><p><b>Shop on line</b> Boutique dépôt/vente en ligne</p></figcaption></figure>
+            <figure><img src="img/06.jpg" alt="photo"><figcaption><p><b>Fly & Go</b> Agence de voyage</p></figcaption></figure>
+            <figure><img src="img/07.jpg" alt="photo"><figcaption><p><b>Dressing Funny</b> Site de vêtements Fashion</p></figcaption></figure>
+            <figure><img src="img/08.jpg" alt="photo"><figcaption><p><b>Print in</b> Site d'impression en ligne</p></figcaption></figure>
+        </div>
+    </section>
+
     <section id="Contact">
         <h3>CONTACT</h3>
         <div class="googlemaps">
@@ -122,10 +121,10 @@
             width="90%" height="500px" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-           <div class="formweb">
-             <h6>CONTACT INFO</h6>
-             <P></P>
-             <form action="Webagency-formulaire" method="post">
+        <div class="formweb">
+            <h6>CONTACT INFO</h6>
+            <P></P>
+            <form action="Webagency-formulaire" method="post">
                 <input type="text" id="nom" name="nom" placeholder="Nom" required>
                 <input type="email" id="email" name="email" placeholder="E-mail" required>
                 <input type="text" id="sujet" name="sujet" placeholder="Sujet" required>
